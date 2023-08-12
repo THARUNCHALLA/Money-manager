@@ -1,0 +1,33 @@
+.AKK {
+  display: flex;
+}
+.lastValue11 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  width: 60px;
+}
+.lastValue21 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  margin-left: 5px;
+  width: 60px;
+}
+.lastValue31 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  width: 60px;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.delete-Button {
+  height: 20px;
+  width: 20px;
+}

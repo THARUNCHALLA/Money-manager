@@ -1,0 +1,131 @@
+.container {
+  background-image: url(https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png);
+  background-size: cover;
+  padding: 40px;
+}
+.heading {
+  font-family: 'roboto';
+  font-size: 22px;
+  color: #475569;
+}
+.paragraph {
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 600;
+}
+.span {
+  color: #0b69ff;
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 600;
+}
+.MoneyContainer {
+  display: flex;
+}
+.containerForForm {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  width: 30%;
+  padding: 20px;
+}
+.formhead {
+  font-family: 'roboto';
+  font-size: 18px;
+  color: #475569;
+}
+label {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 600;
+}
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px;
+}
+#unique {
+  width: 190px;
+}
+#unique1 {
+  width: 190px;
+}
+#unique2 {
+  width: 190px;
+}
+.buttonForm {
+  background-color: #0b69ff;
+  color: white;
+  border: none;
+  height: 26px;
+  width: 50px;
+  border-radius: 06px;
+  margin-top: 20px;
+}
+.lastContainer {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  width: 30%;
+  padding: 20px;
+  margin-left: 30px;
+  width: 350px;
+}
+.bothContainer {
+  display: flex;
+}
+.lastUL1 {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px gray;
+  width: 280px;
+}
+.lastUL {
+  display: flex;
+}
+.line {
+  color: red;
+}
+.lastValue1 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  width: 60px;
+}
+.lastValue2 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  margin-left: 5px;
+  width: 60px;
+}
+.lastValue3 {
+  font-family: 'roboto';
+  font-size: 12px;
+  color: #7e858e;
+  font-weight: 400;
+  width: 60px;
+}
+.transactions-table {
+  padding-left: 0;
+  margin: 0px;
+}
+.table-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  height: 48px;
+  border: 1px solid #cbd5e1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.table-header-cell {
+  color: #334155;
+  font-family: 'roboto';
+  font-size: 12px;
+  font-weight: 500;
+  width: 30%;
+  border-right: none;
+}
