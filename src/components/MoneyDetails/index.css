@@ -1,49 +1,115 @@
 .image1 {
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
+}
+@media (min-width: 1000px) {
+  .image1 {
+    height: 120px;
+    width: 120px;
+  }
 }
 .moneyContainer {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding-top: 20px;
+}
+@media (min-width: 1000px) {
+  .moneyContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-around;
+  }
 }
 .incomeAmount12 {
   background-color: #06b6d4;
-  width: 300px;
+  width: 100px;
   border-radius: 10px;
   border: solid 1px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
+  height: 70px;
   margin-left: 20px;
+}
+@media (min-width: 1000px) {
+  .incomeAmount12 {
+    background-color: #06b6d4;
+    width: 400px;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    margin-left: 20px;
+  }
 }
 .balanceAmount12 {
   background-color: #ecfccb;
-  width: 300px;
+  height: 70px;
   border-radius: 10px;
   border: solid 1px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
+  width: 100px;
+}
+@media (min-width: 1000px) {
+  .balanceAmount12 {
+    background-color: #ecfccb;
+    height: 150px;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+  }
 }
 .expensesAmount12 {
   background-color: #ede9fe;
-  width: 300px;
+  height: 70px;
   border-radius: 10px;
   border: solid 1px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 200px;
+  width: 100px;
   margin-left: 20px;
 }
-.listpara {
-  font-family: 'roboto';
-  font-style: italic;
+@media (min-width: 1000px) {
+  .expensesAmount12 {
+    background-color: #ede9fe;
+    height: 150px;
+    border-radius: 10px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    margin-left: 20px;
+  }
+}
+.listPara {
+  font-family: 'Bree serif';
+  font-size: 10px;
+}
+@media (min-width: 1000px) {
+  .listPara {
+    font-family: 'Bree serif';
+    font-size: 26px;
+  }
 }
 .heading1 {
   font-family: 'roboto';
   font-style: italic;
+  font-size: 10px;
+}
+@media (min-width: 1000px) {
+  .heading1 {
+    font-family: 'roboto';
+    font-style: italic;
+    font-size: 30px;
+  }
 }

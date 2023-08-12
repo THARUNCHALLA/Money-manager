@@ -12,7 +12,7 @@ const MoneyDetails = props => {
           className="image1"
         />
         <div className="containerList">
-          <p className="listpara">Your Balance</p>
+          <p className="listPara">Your Balance</p>
           <p className="heading1" data-testid="balanceAmount">
             Rs {user1234}
           </p>
@@ -25,7 +25,7 @@ const MoneyDetails = props => {
           className="image1"
         />
         <div className="containerList">
-          <p className="listpara">Your Income</p>
+          <p className="listPara">Your Income</p>
           <p className="heading1" data-testid="incomeAmount">
             Rs {user12}
           </p>
@@ -38,7 +38,7 @@ const MoneyDetails = props => {
           className="image1"
         />
         <div className="containerList">
-          <p className="listpara">Your Expenses</p>
+          <p className="listPara">Your Expenses</p>
           <p className="heading1" data-testid="expensesAmount">
             Rs {user123}
           </p>

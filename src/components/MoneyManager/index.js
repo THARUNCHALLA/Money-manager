@@ -79,20 +79,26 @@ class MoneyManager extends Component {
 
     const filter = final.filter(each => each.id !== id)
     const filter1 = final.filter(each => each.id === id)
-    console.log(filter1)
-    if (filter1[0].Type !== 'EXPENSES') {
-      this.setState(prevState => ({
-        YourIncome: prevState.YourIncome - parseInt(filter[0].Amount),
-        total: prevState.total - parseInt(filter[0].Amount),
-      }))
-    } else {
-      this.setState(prevState => ({
-        YourExpenses: prevState.YourIncome - parseInt(filter[0].Amount),
-        total: prevState.total + parseInt(filter[0].Amount),
-      }))
-    }
+    const targetId = id
+    const index = filter1.findIndex(item => item.id === targetId)
 
-    this.setState({final: filter})
+    if (final.length > 1) {
+      if (filter1[index].Type !== 'EXPENSES') {
+        this.setState(prevState => ({
+          YourIncome: prevState.YourIncome - parseInt(filter1[0].Amount),
+          total: prevState.total - parseInt(filter1[0].Amount),
+          final: filter,
+        }))
+      } else {
+        this.setState(prevState => ({
+          YourExpenses: prevState.YourExpenses - parseInt(filter1[0].Amount),
+          total: prevState.total + parseInt(filter1[0].Amount),
+          final: filter,
+        }))
+      }
+    } else {
+      this.setState({final: filter, YourExpenses: 0, YourIncome: 0, total: 0})
+    }
   }
 
   render() {
@@ -107,7 +113,7 @@ class MoneyManager extends Component {
     } = this.state
 
     return (
-      <div>
+      <div className="firstContainer">
         <div className="container">
           <h1 className="heading">Hi,Richard</h1>
           <p className="paragraph">
@@ -119,10 +125,9 @@ class MoneyManager extends Component {
           user123={YourExpenses}
           user1234={total}
         />
-
         <div className="bothContainer">
           <div className="containerForForm">
-            <h1 className="formhead">Add Transaction</h1>
+            <h1 className="formHead">Add Transaction</h1>
             <form onSubmit={this.onAddContact}>
               <div className="labelContainer">
                 <label htmlFor="unique">TITLE</label>
@@ -160,7 +165,7 @@ class MoneyManager extends Component {
             </form>
           </div>
           <div className="lastContainer">
-            <h1 className="formhead">History</h1>
+            <h1 className="formHead">History</h1>
             <div>
               <ul className="transactions-table">
                 <li className="table-header">
